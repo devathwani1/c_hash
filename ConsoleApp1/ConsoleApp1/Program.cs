@@ -1,14 +1,14 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using ConsoleApp1;
 using factorial;
 using palindrome;
+using switch_str;
 internal class Program
 {
     private static void Main(string[] args)
     {
-       Palin f = new Palin();
+       Switch f = new Switch();
         f.get();
-        Console.WriteLine(f.put());
+       f.put();
     }
 }

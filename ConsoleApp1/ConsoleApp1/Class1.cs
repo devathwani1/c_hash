@@ -100,3 +100,33 @@ namespace palindrome
         }
     }
 }
+
+namespace switch_str
+{
+    class Switch
+    {
+        int a;
+        public void get()
+        {
+            a = Convert.ToInt32(Console.ReadLine());
+        }
+
+        public void put()
+        {
+            switch (a)
+            {
+                case 0:
+                    Console.WriteLine("This is the zero");
+                    break;
+                case 1:
+                    Console.WriteLine("This is the one");
+                    break;
+                case 2:
+                    Console.WriteLine("This is the two");
+                    break;
+                
+            }
+        }
+
+    }
+}
