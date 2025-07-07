@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    internal class Class1
+    internal class xyz
     {
         string x;
         int a;
@@ -26,5 +26,14 @@ namespace ConsoleApp1
             Console.WriteLine(c.ToString());
         }
             
+        class d
+        {
+            static void Main(string[] args)
+            {
+                xyz obj = new xyz();
+                obj.get();
+                obj.put();
+            }
+        }
     }
 }
