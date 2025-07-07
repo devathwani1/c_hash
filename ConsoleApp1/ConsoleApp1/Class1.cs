@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace Addition
 {
-    internal class xyz
+    internal class Add
     {
         string x;
         int a;
@@ -26,14 +26,77 @@ namespace ConsoleApp1
             Console.WriteLine(c.ToString());
         }
             
-        class d
+    }
+}
+
+namespace factorial
+{
+    internal class fact
+    {
+        int a;
+
+        public void get()
         {
-            static void Main(string[] args)
+            a = Convert.ToInt32(Console.ReadLine());
+        }
+
+        public void put()
+        {
+            int result = 1;
+            for (int i = a; i > 0; i--)
             {
-                xyz obj = new xyz();
-                obj.get();
-                obj.put();
+                result *= i;
             }
+            Console.WriteLine(result);
+        }
+    }
+}
+
+namespace multiply
+{
+    class Multi
+    {
+        int a, b;
+        
+        public void get()
+        {
+            a = Convert.ToInt32(Console.ReadLine());
+            b = Convert.ToInt32(Console.ReadLine());
+        }
+
+        public int put()
+        {
+            return a * b;
+        }
+    }
+}
+
+namespace palindrome
+{
+    class Palin
+    {
+        string str;
+
+        public void get()
+        {
+            str = Console.ReadLine();
+        }
+
+        public bool put()
+        {
+            int start = 0;
+            int end = str.Length - 1;
+
+            while (start < end)
+            {
+                if (str[start] != str[end])
+                {
+                    return false;
+                }
+                start++;
+                end--;
+            }
+            return true;
         }
     }
 }
