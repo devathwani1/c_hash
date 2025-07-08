@@ -101,6 +101,31 @@ namespace palindrome
     }
 }
 
+
+
+namespace loading
+{
+    class Load
+    {
+        string stars = "*";
+        public void start()
+        {
+            do   
+            {
+                stars += "*";
+                Console.WriteLine('\r' + stars);
+                Thread.Sleep(100);
+                for (int i = 0; i < stars.Length; i++)
+                {
+                    Console.WriteLine("\b \b");
+                }
+            }
+            while (true);
+            
+        }
+    }
+}
+
 namespace switch_str
 {
     class Switch

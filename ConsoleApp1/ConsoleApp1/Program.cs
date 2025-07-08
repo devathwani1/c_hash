@@ -1,14 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using factorial;
-using palindrome;
-using switch_str;
-internal class Program
+using Addition;
+using multiply;
+using System;
+using loading;
+
+class Program
 {
-    private static void Main(string[] args)
+   static void Main(string[] args)
     {
-       Switch f = new Switch();
-        f.get();
-       f.put();
+        Load l = new Load();
+        l.start();
     }
 }
